@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Aone Platform</title>
+<link
+	href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+	rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark shadow">
+		<a class="navbar-brand" href="#">Web高级编程教学网站</a>
+		<form class="form-inline my-2 my-lg-0">
+			<input id="id" class="form-control mr-sm-2" type="number"
+				onkeyup="this.value=this.value.replace(/\D/g,'')"
+				onafterprint="this.value=this.value.replace(/\D/g,'')"
+				placeholder="">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">查找</button>
+		</form>
+	</nav>
+	<div class="container-fluid alert-success"
+		style="font-size: 32px">17204223_徐权</div>
+	<div id="app" class="container-fluid mt-5 col-md-10 alert-success"
+		style="border-radius: 5px"></div>
+	<div id="err" class="container-fluid mt-5 col-md-10 alert-danger"
+		style="border-radius: 5px"></div>
+	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+	<script th:src="@{/js/task.js}"></script>
+</body>
+</html>
